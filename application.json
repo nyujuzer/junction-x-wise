@@ -10,6 +10,9 @@
   "unreadCommentThreads": 0,
   "color": "#F3F1C7",
   "icon": "line-chart",
+  "unpublishedAppLayout": {
+    "type": "MOBILE"
+  },
   "evaluationVersion": 2,
   "applicationVersion": 2,
   "isManualUpdate": false,
