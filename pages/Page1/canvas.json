@@ -402,6 +402,9 @@
                                 },
                                 {
                                   "key": "primaryColumns.vendorName.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.service.computedValue"
                                 }
                               ],
                               "leftColumn": 1,
@@ -448,7 +451,8 @@
                               "columnOrder": [
                                 "price",
                                 "rowIndex",
-                                "vendorName"
+                                "vendorName",
+                                "service"
                               ],
                               "dynamicPropertyPathList": [
                                 {
@@ -490,7 +494,7 @@
                                   "label": "price",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{october.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"price\"]))}}",
+                                  "computedValue": "{{october.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"price\"] + ' USD'))}}",
                                   "validation": {},
                                   "cellBackground": ""
                                 },
@@ -543,10 +547,38 @@
                                   "isEditable": false,
                                   "isCellVisible": true,
                                   "isDerived": false,
-                                  "label": "service",
+                                  "label": "vendor",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
                                   "computedValue": "{{october.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"vendorName\"]))}}",
+                                  "validation": {},
+                                  "cellBackground": ""
+                                },
+                                "service": {
+                                  "allowCellWrapping": false,
+                                  "index": 3,
+                                  "width": 150,
+                                  "originalId": "service",
+                                  "id": "service",
+                                  "alias": "service",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "text",
+                                  "textColor": "",
+                                  "textSize": "0.875rem",
+                                  "fontStyle": "",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellEditable": false,
+                                  "isEditable": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "service",
+                                  "isSaveVisible": true,
+                                  "isDiscardVisible": true,
+                                  "computedValue": "{{october.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"service\"]))}}",
                                   "validation": {},
                                   "cellBackground": ""
                                 }
