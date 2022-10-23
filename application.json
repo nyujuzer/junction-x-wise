@@ -11,7 +11,7 @@
   "color": "#F3F1C7",
   "icon": "line-chart",
   "unpublishedAppLayout": {
-    "type": "FLUID"
+    "type": "DESKTOP"
   },
   "publishedAppLayout": {
     "type": "FLUID"

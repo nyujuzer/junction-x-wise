@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 2060,
+          "bottomRow": 1730,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -39,7 +39,7 @@
                 "parent",
                 "group"
               ],
-              "topRow": 4,
+              "topRow": 3,
               "bottomRow": 137,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
@@ -47,7 +47,7 @@
               "animateLoading": true,
               "parentColumnSpace": 6.84375,
               "dynamicTriggerPathList": [],
-              "leftColumn": 37,
+              "leftColumn": 0,
               "dynamicBindingPathList": [
                 {
                   "key": "borderRadius"
@@ -938,7 +938,7 @@
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisibleFilters": true,
               "tableData": "{{getJustName.data}}",
-              "isVisible": true,
+              "isVisible": false,
               "label": "Data",
               "searchKey": "",
               "enableClientSideSearch": true,
